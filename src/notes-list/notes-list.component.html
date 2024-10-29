@@ -2,7 +2,7 @@
   <ul class="notes">
     @for (note of notes; track $index) {
     <li>
-      <button>
+      <button (click)="show(note.title)">
         <span class="note-title">{{ note.title }}</span>
         <span class="note-text">{{ note.text }}</span>
       </button>
